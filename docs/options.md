@@ -102,3 +102,10 @@ In development mode, we use [prettier](https://prettier.io/) to format the compi
 In non-production environments, vue-loader injects a `__file` property to components for better debugging experience. If the `name` property is missing in a component, Vue will infer it from the `__file` field to display in console warnings.
 
 This property is stripped in production builds by default. But you may want to retain it if you are developing a component library and don't want to bother specifying `name` in each component. Then you can turn this option on.
+
+### scopeIdHashSalt
+
+- type: `string`
+- default: `undefined`
+
+Additional key to scoped-components hash generation (data-v-xxx). Adds the ability to use multiple instances of the same application with different styles on the same page (issue https://github.com/vuejs/vue-loader/issues/1716).
