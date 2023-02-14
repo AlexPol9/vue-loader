@@ -321,3 +321,10 @@ Enable Vue 2.4 SSR compilation optimization that compiles part of the vdom trees
 
 Whether to use webpack [Hot Module Replacement](https://webpack.js.org/concepts/hot-module-replacement/) to apply changes in the browser **without reloading the page**.
 Use this option (value `false`) to disable the Hot Reload feature in development mode.
+
+### scopeIdHashSalt
+
+- type: `string`
+- default: `undefined`
+
+Additional key to scoped-components hash generation (data-v-xxx). Adds the ability to use multiple instances of the same application with different styles on the same page (issue https://github.com/vuejs/vue-loader/issues/1716).
